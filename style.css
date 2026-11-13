@@ -1,0 +1,13 @@
+/* La Tasse des Cousines – styles communs (en plus de Tailwind) */
+html{scroll-behavior:smooth;scroll-padding-top:5.5rem}
+.material-symbols-outlined{font-family:'Material Symbols Outlined';font-weight:normal;font-style:normal;line-height:1;display:inline-block;-webkit-font-smoothing:antialiased}
+:focus-visible{outline:3px solid #8e4e0e;outline-offset:2px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.4rem;padding:.7rem 1.4rem;border-radius:.5rem;font-weight:600;font-size:.9rem;background:#731018;color:#fff;transition:background .2s}
+.btn:hover{background:#500009}
+.btn-alt{background:#fcebd7;color:#8e4e0e}
+.btn-alt:hover{background:#ffdcc3}
+.inp{width:100%;padding:.65rem 1rem;border-radius:.5rem;background:#fff8f3;border:1px solid #debfbe}
+.card{background:#fff;border-radius:1rem;overflow:hidden;box-shadow:0 1px 6px rgba(80,0,9,.08)}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}

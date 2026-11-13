@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 38s linear infinite;
+}
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "secondary": "#8e4e0e",
+          "tertiary-fixed-dim": "#ffb691",
+          "inverse-surface": "#382f22",
+          "secondary-fixed": "#ffdcc3",
+          "outline": "#8a7170",
+          "on-primary-fixed": "#410006",
+          "secondary-fixed-dim": "#ffb77e",
+          "on-secondary": "#ffffff",
+          "surface-tint": "#a73739",
+          "on-background": "#221a0e",
+          "on-primary-fixed-variant": "#861f24",
+          "primary": "#500009",
+          "on-surface": "#221a0e",
+          "inverse-primary": "#ffb3b0",
+          "on-tertiary-fixed-variant": "#793100",
+          "primary-fixed-dim": "#ffb3b0",
+          "primary-container": "#731018",
+          "on-error": "#ffffff",
+          "surface-variant": "#f0e0cc",
+          "on-secondary-container": "#773e00",
+          "on-error-container": "#93000a",
+          "on-primary-container": "#ff7977",
+          "on-surface-variant": "#574140",
+          "error-container": "#ffdad6",
+          "on-tertiary-fixed": "#341100",
+          "inverse-on-surface": "#ffeeda",
+          "tertiary": "#411700",
+          "on-tertiary-container": "#ee8951",
+          "tertiary-fixed": "#ffdbcb",
+          "secondary-container": "#ffab66",
+          "on-secondary-fixed": "#2f1500",
+          "surface-container-high": "#f6e6d2",
+          "surface-dim": "#e7d8c4",
+          "surface-container": "#fcebd7",
+          "tertiary-container": "#632700",
+          "on-tertiary": "#ffffff",
+          "background": "#fff8f3",
+          "surface": "#fff8f3",
+          "primary-fixed": "#ffdad8",
+          "error": "#ba1a1a",
+          "outline-variant": "#debfbe",
+          "on-primary": "#ffffff",
+          "surface-container-low": "#fff2e2",
+          "surface-bright": "#fff8f3",
+          "surface-container-lowest": "#ffffff",
+          "on-secondary-fixed-variant": "#6e3900",
+          "surface-container-highest": "#f0e0cc"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "gutter-md": "1.5rem",
+          "margin-lg": "3rem",
+          "margin-md": "2rem",
+          "gutter-lg": "2rem",
+          "space-md": "1rem",
+          "space-xl": "2.5rem",
+          "space-lg": "1.5rem",
+          "space-sm": "0.5rem",
+          "gutter": "1rem",
+          "margin": "1rem",
+          "space-xs": "0.25rem"
+        },
+        "fontFamily": {
+          "display": [
+            "Playfair Display"
+          ],
+          "display-mobile": [
+            "Playfair Display"
+          ],
+          "price-tag": [
+            "Playfair Display"
+          ],
+          "headline-sm": [
+            "Playfair Display"
+          ],
+          "title-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Playfair Display"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "label-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg-mobile": [
+            "Playfair Display"
+          ],
+          "headline-lg": [
+            "Playfair Display"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "title-md": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "display": [
+            "48px",
+            {
+              "lineHeight": "56px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "display-mobile": [
+            "34px",
+            {
+              "lineHeight": "42px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "price-tag": [
+            "22px",
+            {
+              "lineHeight": "26px",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "title-lg": [
+            "18px",
+            {
+              "lineHeight": "26px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "26px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.03em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "400"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "22px",
+              "fontWeight": "400"
+            }
+          ],
+          "title-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased" data-mode="connect"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(64,11,6,0.06)]"><div class="h-20 w-full max-w-[1240px] mx-auto px-margin md:px-margin-md lg:px-margin-lg flex items-center justify-between gap-gutter"><a class="flex items-center gap-space-sm group" href="index.html"><div class="w-12 h-12 rounded-full overflow-hidden flex items-center justify-center p-0.5 bg-surface-container-high ring-2 ring-secondary/25 shadow-sm group-hover:scale-105 transition-transform"><img alt="La Tasse des Cousines, logo du salon de thé" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqcvcPwzXs44YjODlQnC_31TgWZE0RQN7uJnQcVsVv2t1HWX71V7iyUsSa6Yig5wa7g2thHdrwn4qPzFFVn5amdNPQ4Fi1MdeRvj6nGv8AUfKNaE1xkIWr3mJrLWkMMt_OKnFq4A8STaTfieDFM4voVOEHdzjj9oZtcxMZ1bC_-BRlqk_-0WAhCBxUgyVLce3BGw6N65gkzYOwrHlmUUb-o0m6Dm0MfGF25KUyfRXlwpakvutimFu9"/></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-tight tracking-tight">La Tasse des Cousines</span><span class="font-label-md text-label-md text-secondary italic tracking-normal hidden sm:inline">Un thé, mille cultures, une seule famille</span></div></a><div class="flex items-center gap-space-sm sm:gap-space-md"><div class="relative group"><button aria-expanded="false" class="inline-flex items-center gap-2 px-space-md py-2 bg-surface-container-high text-primary hover:bg-surface-variant font-label-lg text-label-lg rounded-lg border border-secondary/20 transition-all shadow-sm focus:outline-none" id="menu-dropdown-btn"><span class="material-symbols-outlined text-title-md text-secondary">menu</span><span>Carte &amp; Menus</span><span class="material-symbols-outlined text-title-md transition-transform group-hover:rotate-180 duration-200">arrow_drop_down</span></button><div class="absolute right-0 top-full mt-2 w-72 bg-surface-container-lowest border border-secondary/15 rounded-xl shadow-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200 z-50"><div class="px-space-md py-1.5 border-b border-surface-container text-[11px] font-bold uppercase tracking-wider text-secondary">Explorer le salon</div><a class="flex items-center gap-space-sm px-space-md py-2.5 hover:bg-surface-container-low text-on-surface hover:text-primary transition-colors text-body-md" href="#menu-thes"><span class="material-symbols-outlined text-title-md text-secondary">local_cafe</span><div><span class="font-title-md text-title-md font-semibold block leading-tight">Nos Thés du Monde</span><span class="text-body-sm text-on-surface-variant text-xs">Infusions, menthe Nanah, Chaï &amp; Matcha</span></div></a><a class="flex items-center gap-space-sm px-space-md py-2.5 hover:bg-surface-container-low text-on-surface hover:text-primary transition-colors text-body-md" href="#patisseries"><span class="material-symbols-outlined text-title-md text-secondary">bakery_dining</span><div><span class="font-title-md text-title-md font-semibold block leading-tight">Pâtisseries &amp; Douceurs</span><span class="text-body-sm text-on-surface-variant text-xs">Cornes de gazelle, baklava, cookies...</span></div></a><a class="flex items-center gap-space-sm px-space-md py-2.5 hover:bg-surface-container-low text-on-surface hover:text-primary transition-colors text-body-md" href="#formules"><span class="material-symbols-outlined text-title-md text-secondary">lunch_dining</span><div><span class="font-title-md text-title-md font-semibold block leading-tight">Formules Goûter</span><span class="text-body-sm text-on-surface-variant text-xs">Dès 5,00 € (Enfants, Étudiants, Découverte)</span></div></a><a class="flex items-center gap-space-sm px-space-md py-2.5 hover:bg-surface-container-low text-on-surface hover:text-primary transition-colors text-body-md" href="#histoire"><span class="material-symbols-outlined text-title-md text-secondary">diversity_1</span><div><span class="font-title-md text-title-md font-semibold block leading-tight">Notre Histoire</span><span class="text-body-sm text-on-surface-variant text-xs">L’aventure des quatre cousines</span></div></a><a class="flex items-center gap-space-sm px-space-md py-2.5 hover:bg-surface-container-low text-on-surface hover:text-primary transition-colors text-body-md" href="#nous-trouver"><span class="material-symbols-outlined text-title-md text-secondary">location_on</span><div><span class="font-title-md text-title-md font-semibold block leading-tight">Nous Trouver</span><span class="text-body-sm text-on-surface-variant text-xs">Nantes Bouffay • selon les horaires fictifs du projet</span></div></a><div class="my-1 border-t border-surface-container"></div><a class="flex items-center gap-space-sm px-space-md py-2 hover:bg-surface-container-low text-secondary hover:text-primary transition-colors text-body-sm font-semibold" href="#reservation"><span class="material-symbols-outlined text-title-md">celebration</span><span>Contact &amp; Privatisation</span></a></div></div><a class="inline-flex items-center justify-center px-space-md py-2 bg-primary-container text-on-primary font-label-lg text-label-lg rounded-lg shadow-[0_2px_8px_rgba(64,11,6,0.12)] hover:bg-primary transition-all gap-1.5" data-path="reservation-et-commande" href="#reservation"><span class="material-symbols-outlined text-title-md">restaurant</span><span class="hidden sm:inline">Commander ou Réserver</span><span class="sm:hidden">Réserver</span></a><img alt="Illustration de profil décorative du site La Tasse des Cousines" class="w-8 h-8 rounded-full object-cover ring-2 ring-secondary-container/40 hidden md:block" src="https://lh3.googleusercontent.com/aida/ALJJyrDPmfZ0iGygrTX3mCxcmfKg72ZGQe5ESUqj0TBzBr6XBzxGUystrfBId0zuOGH2oYlTAiKH61KsH3DuZL8UJrIHii6NX-R-jZIyG3R87EdwrroErPWxA34K0DpJbOMXq64vLFE3Jymgdn_jOYmFBsvEosOlFvOME-RjoTIJEWCjg0LkUnyf-mvtFEysDPBO7HwyXkWh5SCoD2BtRI_Oah5GNxeMuhqqNtEbKK8j2WQwGrq6vhrfT8k3V0S1"/></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- Hero Section -->
+<section class="relative w-full overflow-hidden bg-surface-container-low py-space-xl lg:py-20">
+<!-- Subtle Ambient Warm Glows -->
+<div class="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div>
+<div class="absolute bottom-0 right-0 w-[500px] h-[500px] rounded-full bg-primary-fixed-dim/25 blur-3xl pointer-events-none"></div>
+<div class="w-full max-w-[1240px] mx-auto px-margin md:px-margin-md lg:px-margin-lg relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-center">
+<!-- Left: Core Narrative -->
+<div class="lg:col-span-7 flex flex-col items-start gap-space-md text-left">
+<!-- Badge Sub-5€ Guarantee -->
+<div class="inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-surface-container-highest shadow-sm">
+<span class="material-symbols-outlined text-primary text-title-md" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span class="font-label-lg text-label-lg text-primary">Engagement Doux : Nos délices &amp; thés artisanaux à prix doux et solidaires</span>
+</div>
+<!-- Main Title & Verbatim Tagline -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-lg text-label-lg uppercase tracking-widest text-secondary font-semibold">Salon de thé interculturel &amp; artisanal</span>
+<h1 class="font-display text-display text-primary leading-tight">
+              Le salon de thé chaleureux où le monde se réunit
+            </h1>
+<p class="font-headline-md text-headline-md text-secondary italic font-display mt-space-xs">
+              « Un thé, mille cultures, une seule famille »
+            </p><p class="text-body-sm text-on-surface-variant italic">Projet fictif : les prix, horaires, avis et informations pratiques de cette page sont des exemples créés pour la présentation du concept.</p>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+            Poussez la porte d’un refuge parfumé aux épices douces et aux infusions d’antan. Entre porcelaines réconfortantes, rituels ancestraux, banquettes veloutées et espace ludique pour les enfants, nous célébrons le lien fraternel qui nous unit autour d'une tasse fumante.
+          </p>
+<!-- CTAs -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs w-full sm:w-auto">
+<a class="inline-flex items-center justify-center gap-space-xs px-space-xl py-space-sm bg-primary-container text-on-primary font-label-lg text-label-lg rounded-lg shadow-md hover:bg-primary transition-all" href="#menu-thes">
+<span class="material-symbols-outlined text-title-lg">menu_book</span>
+<span class="">Découvrir la Carte</span>
+</a>
+<a class="inline-flex items-center justify-center gap-space-xs px-space-lg py-space-sm bg-surface-container-highest text-primary font-label-lg text-label-lg rounded-lg shadow-sm hover:bg-surface-variant transition-all" href="#reservation">
+<span class="material-symbols-outlined text-title-lg">table_restaurant</span>
+<span class="">Réserver une table</span>
+</a>
+</div>
+<!-- Quick Stats Highlights -->
+<div class="grid grid-cols-3 gap-space-md pt-space-md w-full border-t border-secondary/10 mt-space-sm">
+<div class="flex flex-col">
+<span class="font-display text-headline-md text-primary">100%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Fait Maison</span>
+</div>
+<div class="flex flex-col"><span class="font-display text-headline-md text-secondary">Dès 2,20 €</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Prix Doux &amp; Éthiques</span></div>
+<div class="flex flex-col">
+<span class="font-display text-headline-md text-primary">7 j / 7</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Accueil Bienveillant</span>
+</div>
+</div>
+</div>
+<!-- Right: Photography Showcase of the Salon & Kids Corner -->
+<div class="lg:col-span-5 flex justify-center items-center relative">
+<div class="relative w-full max-w-[480px]">
+<!-- Soft Concentric Halo -->
+<div class="absolute -inset-3 rounded-3xl bg-gradient-to-tr from-secondary-container/40 via-surface-container to-primary-fixed/30 shadow-xl blur-lg"></div>
+<!-- Image Container Card -->
+<div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-surface-container-lowest transition-transform hover:scale-[1.01] duration-300 aspect-square sm:aspect-[4/3] lg:aspect-[5/4]">
+<img alt="Vue d’un salon de thé convivial avec boissons, pâtisseries et espace de jeux" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcXcMT8LRTr8tTVAgqvBfwO8z6xFMh3-KuHW00HvJvlivY9qyt9ZInbmDMVsyFob7hpstYZ3lmVCshwjgckXmyAgRNvzxUs-QvrSccFLx3u7Q1oFh2IOaVvlqJm9Ki6nbpo7f3xu-wjAkIgVOyIRHEecEADzqFDGQPM9yCOBiaWcUtEZfZ8_LmWIyev5HqOafAwg-0QQ1uwpWj4vSVwGZtExDwN10GfIh-eacCE_o"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-black/10"></div>
+<div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-on-primary">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-bold text-white drop-shadow-sm">Salon Convivial &amp; Espace Famille</span>
+<span class="font-body-sm text-body-sm text-primary-fixed drop-shadow-sm">Banquettes velours, gâteaux du jour &amp; coin jeux</span>
+</div>
+<span class="w-9 h-9 rounded-full bg-surface-container/90 text-primary flex items-center justify-center shrink-0 shadow"><span class="material-symbols-outlined text-title-md">toys</span></span>
+</div>
+</div>
+<!-- Floating Badges -->
+<div class="absolute -top-3 -right-3 bg-secondary text-on-secondary px-space-md py-1.5 rounded-full shadow-lg flex items-center gap-1.5 border border-surface-container-lowest">
+<span class="material-symbols-outlined text-title-md text-secondary-fixed">child_care</span>
+<span class="font-label-md text-label-md font-bold tracking-wide">Coin Espace Enfants</span>
+</div>
+<div class="absolute -bottom-3 -left-3 bg-primary text-on-primary px-space-md py-space-xs rounded-xl shadow-lg flex items-center gap-space-xs border border-surface-container-lowest">
+<span class="material-symbols-outlined text-title-md text-secondary-container">cottage</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold leading-tight">Notre Refuge Gourmand</span>
+<span class="text-primary-fixed font-body-sm text-[11px] leading-tight">Tables chaleureuses &amp; thés d'antan</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Animated Reviews Marquee (Continuous Flow) -->
+<section aria-label="Avis clients en direct" class="w-full bg-surface-container-highest/60 border-y border-secondary/15 py-4 overflow-hidden relative">
+<div class="flex items-center">
+<div class="shrink-0 px-4 flex items-center gap-2 text-secondary font-label-md text-label-md font-bold uppercase tracking-wider border-r border-secondary/20 mr-2 bg-surface/80 py-1.5 rounded-lg ml-2 z-10 shadow-sm">
+<span class="material-symbols-outlined text-primary text-title-md">reviews</span>
+<span class="hidden sm:inline">Avis Clients</span>
+<div class="flex text-amber-600"><span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span></div>
+</div>
+<div class="overflow-hidden w-full relative">
+<div class="animate-marquee flex items-center gap-4">
+<!-- Card 1 -->
+<div class="inline-flex items-center gap-3 px-4 py-2 bg-surface-container-lowest rounded-xl shadow-sm border border-secondary/10 shrink-0">
+<div class="flex text-amber-600"><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span></div>
+<span class="font-body-sm text-body-sm text-on-surface italic">« Le coin enfants avec ses jouets en bois a sauvé notre après-midi goûter en famille ! »</span>
+<span class="font-label-md text-label-md text-primary font-bold">— Visiteuse fictive</span>
+</div>
+<!-- Card 2 -->
+<div class="inline-flex items-center gap-3 px-4 py-2 bg-surface-container-lowest rounded-xl shadow-sm border border-secondary/10 shrink-0">
+<div class="flex text-amber-600"><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span></div>
+<span class="font-body-sm text-body-sm text-on-surface italic">« Des thés d'exception à prix tout doux dès 2,20 €, une ambiance cocooning unique. »</span>
+<span class="font-label-md text-label-md text-primary font-bold">— Visiteur fictif</span>
+</div>
+<!-- Card 3 -->
+<div class="inline-flex items-center gap-3 px-4 py-2 bg-surface-container-lowest rounded-xl shadow-sm border border-secondary/10 shrink-0">
+<div class="flex text-amber-600"><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span></div>
+<span class="font-body-sm text-body-sm text-on-surface italic">« Les cornes de gazelle et cookies sortis du four sont juste divins. On s'y sent comme chez soi ! »</span>
+<span class="font-label-md text-label-md text-primary font-bold">— Deux visiteurs fictifs</span>
+</div>
+<!-- Card 4 -->
+<div class="inline-flex items-center gap-3 px-4 py-2 bg-surface-container-lowest rounded-xl shadow-sm border border-secondary/10 shrink-0">
+<div class="flex text-amber-600"><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span></div>
+<span class="font-body-sm text-body-sm text-on-surface italic">« Formule étudiant à 6€ avec connexion internet et théière fumante : mon repaire révisions n°1. »</span>
+<span class="font-label-md text-label-md text-primary font-bold">— Visiteuse fictive</span>
+</div>
+<!-- Duplicate set for seamless looping -->
+<!-- Card 1 bis -->
+<div class="inline-flex items-center gap-3 px-4 py-2 bg-surface-container-lowest rounded-xl shadow-sm border border-secondary/10 shrink-0">
+<div class="flex text-amber-600"><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span></div>
+<span class="font-body-sm text-body-sm text-on-surface italic">« Le coin enfants avec ses jouets en bois a sauvé notre après-midi goûter en famille ! »</span>
+<span class="font-label-md text-label-md text-primary font-bold">— Visiteuse fictive</span>
+</div>
+<!-- Card 2 bis -->
+<div class="inline-flex items-center gap-3 px-4 py-2 bg-surface-container-lowest rounded-xl shadow-sm border border-secondary/10 shrink-0">
+<div class="flex text-amber-600"><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span></div>
+<span class="font-body-sm text-body-sm text-on-surface italic">« Des thés d'exception à prix tout doux dès 2,20 €, une ambiance cocooning unique. »</span>
+<span class="font-label-md text-label-md text-primary font-bold">— Visiteur fictif</span>
+</div>
+<!-- Card 3 bis -->
+<div class="inline-flex items-center gap-3 px-4 py-2 bg-surface-container-lowest rounded-xl shadow-sm border border-secondary/10 shrink-0">
+<div class="flex text-amber-600"><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span></div>
+<span class="font-body-sm text-body-sm text-on-surface italic">« Les cornes de gazelle et cookies sortis du four sont juste divins. On s'y sent comme chez soi ! »</span>
+<span class="font-label-md text-label-md text-primary font-bold">— Deux visiteurs fictifs</span>
+</div>
+<!-- Card 4 bis -->
+<div class="inline-flex items-center gap-3 px-4 py-2 bg-surface-container-lowest rounded-xl shadow-sm border border-secondary/10 shrink-0">
+<div class="flex text-amber-600"><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span></div>
+<span class="font-body-sm text-body-sm text-on-surface italic">« Formule étudiant à 6€ avec connexion internet et théière fumante : mon repaire révisions n°1. »</span>
+<span class="font-label-md text-label-md text-primary font-bold">— Visiteuse fictive</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Banner of Promises & Values -->
+<section class="w-full bg-primary-container text-on-primary py-space-lg">
+<div class="w-full max-w-[1240px] mx-auto px-margin md:px-margin-md lg:px-margin-lg">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-primary/40">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-headline-sm">menu_book</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-semibold">Recettes Familiales</span>
+<span class="font-body-sm text-body-sm text-primary-fixed">Secrets transmis de mère en fille</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-primary/40">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-headline-sm">public</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-semibold">Origine Équitable</span>
+<span class="font-body-sm text-body-sm text-primary-fixed">Feuilles nobles récoltées avec respect</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-primary/40">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-headline-sm">bakery_dining</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-semibold">Pâtisseries du Jour</span>
+<span class="font-body-sm text-body-sm text-primary-fixed">Pétries chaque matin sans additifs</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-primary/40">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-headline-sm">diversity_1</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-semibold">Chaleur Partagée</span>
+<span class="font-body-sm text-body-sm text-primary-fixed">Un carrefour sans distinction</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Nos Thés & Infusions du Monde -->
+<section class="w-full py-space-xl bg-surface" id="menu-thes">
+<div class="w-full max-w-[1240px] mx-auto px-margin md:px-margin-md lg:px-margin-lg flex flex-col gap-space-lg">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<span class="font-label-lg text-label-lg text-secondary uppercase font-semibold">Voyage sensoriel en tasse</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Nos Thés &amp; Infusions d'Origine</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Chaque gorgée rend hommage aux coutumes hospitalières d'Afrique, d'Orient et d'Asie. Préparés selon les rituels traditionnels et toujours à prix fraternel.
+          </p>
+</div>
+<div class="inline-flex items-center gap-2 self-start md:self-end px-4 py-2 bg-surface-container rounded-full text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-title-md">schedule</span>
+<span class="">Infusés minute &amp; servis en théière individuelle</span>
+</div>
+</div>
+<!-- Tea Grid (6 items) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Tea 1: Thé à la Menthe Touareg -->
+<div class="flex flex-col justify-between p-space-lg rounded-xl bg-surface-container-low shadow-sm hover:shadow-md transition-all duration-200">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-1 bg-surface-container text-secondary font-label-md text-label-md rounded-md flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">flag</span> Maroc
+              </span>
+<span class="font-price-tag text-price-tag text-primary bg-primary-fixed/50 px-space-sm py-0.5 rounded-lg">3,20 €</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Thé à la Menthe façon Touareg</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Thé vert Gunpowder d'exception, feuilles de menthe Nanah fraîches froissées à la main, touche de fleur d'oranger et pignons de pin torréfiés.
+            </p>
+</div>
+<div class="pt-space-md flex items-center justify-between border-t border-outline-variant/30 mt-space-md">
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-sm text-secondary">thermostat</span> 90°C • 4 min
+            </div>
+<button class="px-space-md py-1.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">add</span> Choisir
+            </button>
+</div>
+</div>
+<!-- Tea 2: Chaï Masala authentique -->
+<div class="flex flex-col justify-between p-space-lg rounded-xl bg-surface-container-low shadow-sm hover:shadow-md transition-all duration-200">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-1 bg-surface-container text-secondary font-label-md text-label-md rounded-md flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">flag</span> Inde
+              </span>
+<span class="font-price-tag text-price-tag text-primary bg-primary-fixed/50 px-space-sm py-0.5 rounded-lg">3,80 €</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Chaï Masala Authentique</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Thé noir Assam mijoté aux sept épices (cardamome verte, cannelle, clou de girofle, gingembre frais) et lié avec un lait chaud onctueux.
+            </p>
+</div>
+<div class="pt-space-md flex items-center justify-between border-t border-outline-variant/30 mt-space-md">
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-sm text-secondary">thermostat</span> Cuit au lait • Épicé doux
+            </div>
+<button class="px-space-md py-1.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">add</span> Choisir
+            </button>
+</div>
+</div>
+<!-- Tea 3: Matcha Latte de Kyoto -->
+<div class="flex flex-col justify-between p-space-lg rounded-xl bg-surface-container-low shadow-sm hover:shadow-md transition-all duration-200">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-1 bg-surface-container text-secondary font-label-md text-label-md rounded-md flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">flag</span> Japon (Kyoto)
+              </span>
+<span class="font-price-tag text-price-tag text-primary bg-primary-fixed/50 px-space-sm py-0.5 rounded-lg">4,20 €</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Matcha Latte Cérémonial</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Poudre de thé vert bio d’Uji fouettée minute au chasen en bambou traditionnel, velouté de lait d’avoine ou entier bio.
+            </p>
+</div>
+<div class="pt-space-md flex items-center justify-between border-t border-outline-variant/30 mt-space-md">
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-sm text-secondary">thermostat</span> 75°C • Fouetté minute
+            </div>
+<button class="px-space-md py-1.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">add</span> Choisir
+            </button>
+</div>
+</div>
+<!-- Tea 4: Rooibos Vanille & Agrumes -->
+<div class="flex flex-col justify-between p-space-lg rounded-xl bg-surface-container-low shadow-sm hover:shadow-md transition-all duration-200">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-1 bg-surface-container text-secondary font-label-md text-label-md rounded-md flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">flag</span> Afrique du Sud
+              </span>
+<span class="font-price-tag text-price-tag text-primary bg-primary-fixed/50 px-space-sm py-0.5 rounded-lg">3,50 €</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Rooibos Vanille Bourbon &amp; Agrumes</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Boisson rouge naturellement sans théine des monts Cederberg, infusée aux gousses de vanille de Madagascar et zestes d’oranges confites.
+            </p>
+</div>
+<div class="pt-space-md flex items-center justify-between border-t border-outline-variant/30 mt-space-md">
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-sm text-secondary">thermostat</span> 95°C • Sans théine
+            </div>
+<button class="px-space-md py-1.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">add</span> Choisir
+            </button>
+</div>
+</div>
+<!-- Tea 5: Thé Noir Earl Grey aux Bleuets -->
+<div class="flex flex-col justify-between p-space-lg rounded-xl bg-surface-container-low shadow-sm hover:shadow-md transition-all duration-200">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-1 bg-surface-container text-secondary font-label-md text-label-md rounded-md flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">flag</span> Angleterre / Chine
+              </span>
+<span class="font-price-tag text-price-tag text-primary bg-primary-fixed/50 px-space-sm py-0.5 rounded-lg">3,00 €</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Earl Grey Royal aux Fleurs de Bleuet</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Mélange noble de thés noirs de haute altitude parfumé à la bergamote de Calabre pure et parsemé de pétales de bleuets champêtres.
+            </p>
+</div>
+<div class="pt-space-md flex items-center justify-between border-t border-outline-variant/30 mt-space-md">
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-sm text-secondary">thermostat</span> 90°C • 3,5 min
+            </div>
+<button class="px-space-md py-1.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">add</span> Choisir
+            </button>
+</div>
+</div>
+<!-- Tea 6: Infusion Bissap & Hibiscus -->
+<div class="flex flex-col justify-between p-space-lg rounded-xl bg-surface-container-low shadow-sm hover:shadow-md transition-all duration-200">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-1 bg-surface-container text-secondary font-label-md text-label-md rounded-md flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">flag</span> Sénégal
+              </span>
+<span class="font-price-tag text-price-tag text-primary bg-primary-fixed/50 px-space-sm py-0.5 rounded-lg">3,40 €</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Infusion Bissap Épicé &amp; Hibiscus</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Fleurs d’hibiscus séchées au soleil d'Afrique, relevées d'un bâton de cannelle, de muscade et d’une pointe de menthe fraîche. Chaud ou glacé.
+            </p>
+</div>
+<div class="pt-space-md flex items-center justify-between border-t border-outline-variant/30 mt-space-md">
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-sm text-secondary">thermostat</span> Fruité &amp; Acidulé
+            </div>
+<button class="px-space-md py-1.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">add</span> Choisir
+            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Pâtisseries & Douceurs du Monde -->
+<section class="w-full py-space-xl bg-surface-container-high/40" id="patisseries">
+<div class="w-full max-w-[1240px] mx-auto px-margin md:px-margin-md lg:px-margin-lg flex flex-col gap-space-lg">
+<div class="flex flex-col max-w-2xl gap-space-xs">
+<span class="font-label-lg text-label-lg text-secondary uppercase font-semibold">L'Artisanat du Fournil</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Pâtisseries &amp; Douceurs d’Ailleurs</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Pétries à la main chaque aube avec de la farine locale et du beurre de baratte, nos douceurs rendent hommage aux cuisines maternelles du monde entier.
+        </p>
+</div>
+<!-- Pastry Cards Grid (6 items + Cookies) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Pastry 1 -->
+<div class="flex flex-col overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all group">
+<div class="h-44 w-full overflow-hidden relative">
+<img alt="Assortiment de pâtisseries inspirées des cuisines du monde" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Artisanal delicate Moroccan gazelle horns pastry coated in fine icing sugar, filled with ground almond paste and orange blossom, displayed on an authentic ceramic plate in warm cozy tea room lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuArkaLPxJk0HiLx9fD6l6CqE2b77qwartVhKr8IM3nETsuvRrQt-PCZidJj3_HdLvu-9u56q6x2AyVRnh9IxYlcgcwwT1BMJIow2qQN3Gz6zkongV_umgCfFduxWSrpBsu6S1EY-YBcWuJ0xzbV-uDhtbcOU__v2UC2PkCvDr3gvb15-H75ZJ3_04demrjlAgXaGAJoefGjJk6oTiTPmeKgYQw57Z0YFwCrVF9V4QaQ"/>
+<div class="absolute top-3 left-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded-md text-primary font-label-md text-label-md font-bold">
+              Maghreb
+            </div>
+<div class="absolute top-3 right-3 bg-secondary text-on-secondary px-3 py-1 rounded-full font-price-tag text-price-tag font-bold shadow-sm">
+              2,20 €
+            </div>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1 gap-space-sm">
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm text-primary">Corne de Gazelle Artisanale</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Pâte fine dentelée, farce fondante aux amandes douces parfumées à l'eau de fleur d'oranger distillée en cuivre.
+              </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs border-t border-outline-variant/30">
+<span class="font-label-md text-label-md text-secondary">Fait chaque matin</span>
+<button class="font-label-md text-label-md text-primary hover:text-primary-container font-semibold flex items-center gap-1">
+                Ajouter au plateau <span class="material-symbols-outlined text-sm">east</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Pastry 2 -->
+<div class="flex flex-col overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all group">
+<div class="h-44 w-full overflow-hidden relative">
+<img alt="Plateau de douceurs orientales présenté pour le goûter" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Crispy layered Middle Eastern baklava pastry glistening with pure blossom honey and finely crushed vibrant green pistachios, artisanal ceramic backdrop, warm tea salon ambience." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBP4WmYn08HzdCwiunT1u1HtopWGwHoRs_uqJ_aPCUPKxFcbbLoIoifRKoni6jI3jlrifS-w8sWPsCuUt1jsILLkeqfdUqJp07qrIMdeDUxKjDxiuZVbW4CyYWnyfTDpsYkwPsWUYQcRSCQAy6aed7akw2_y57PwnXk-LA_EE8tifdq-fjRCNW4c2TLGcXNA_jdLIwMQCKR2J8xfQeI-eUgbywHJmckkzbkQ4LheSKn"/>
+<div class="absolute top-3 left-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded-md text-primary font-label-md text-label-md font-bold">
+              Moyen-Orient
+            </div>
+<div class="absolute top-3 right-3 bg-secondary text-on-secondary px-3 py-1 rounded-full font-price-tag text-price-tag font-bold shadow-sm">
+              2,80 €
+            </div>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1 gap-space-sm">
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm text-primary">Baklava Croustillant Pistache &amp; Miel</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Quarante feuilles filo croustillantes imbibées de miel d'acacia chaud et garnies d’éclats de pistaches torréfiées.
+              </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs border-t border-outline-variant/30">
+<span class="font-label-md text-label-md text-secondary">Recette d'Alep</span>
+<button class="font-label-md text-label-md text-primary hover:text-primary-container font-semibold flex items-center gap-1">
+                Ajouter au plateau <span class="material-symbols-outlined text-sm">east</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Pastry 3 -->
+<div class="flex flex-col overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all group">
+<div class="h-44 w-full overflow-hidden relative">
+<img alt="Présentation de pâtisseries artisanales accompagnées d’une boisson chaude" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Warm golden British buttermilk scone split open, topped with rich authentic clotted cream and ruby strawberry homemade jam on vintage china plate, afternoon tea warm lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWh8kK-FtBEs4d7m8HwqoscrMRMuu5CuTotYa1c3M73ms63j7QBK7_fr6WrTAFPjZvkFigQORUV0ncZWH1o-sbLaDaqa1yZo2lIFTGWTFQM-1Ky9Fqh6MIbtB2IoqZDReJHa3Unww7ofe9VLoGhHN4qOBqJs5oTplEJUmpBlPoiPg46rvsep7w1A9JTtbAM3_XB4QDljwDYBwcw8JjWBCZ_tjTlc-0cpU1y9kv7avp"/>
+<div class="absolute top-3 left-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded-md text-primary font-label-md text-label-md font-bold">
+              Royaume-Uni
+            </div>
+<div class="absolute top-3 right-3 bg-secondary text-on-secondary px-3 py-1 rounded-full font-price-tag text-price-tag font-bold shadow-sm">
+              3,50 €
+            </div>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1 gap-space-sm">
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm text-primary">Scone Traditionnel Clotted Cream</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Scone tiède au beurre de baratte, servi avec sa crème épaisse caillée fermière et confiture maison de fraises mara.
+              </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs border-t border-outline-variant/30">
+<span class="font-label-md text-label-md text-secondary">Servi tiède</span>
+<button class="font-label-md text-label-md text-primary hover:text-primary-container font-semibold flex items-center gap-1">
+                Ajouter au plateau <span class="material-symbols-outlined text-sm">east</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Pastry 4 -->
+<div class="flex flex-col overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all group">
+<div class="h-44 w-full overflow-hidden relative">
+<img alt="Assortiment de petites douceurs sucrées" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Delicate artisanal Japanese mochi with smooth silky exterior dusted in rice flour, filled with sweet red azuki bean and roasted black sesame on dark wooden plate." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDafmK27o_EpUVFs0y8uMT7Hh4b_RGWjL5weWMvH8nCYJH530m1pHgB4N1z2LzSx1PwIM_2LCzGnibX1X6m8t3bOUvzLLJPPguslOC8gaCayoqEaN0FG8ZQ7juEkWfOT3XwN3VTQghnUvryUjoJ7iT3S4fJ88M4yta71y7DV8Rtoe9MGwmFg1bTKtoa6mbkSCPIgCYCx4ydzNAbvnJlg947MEH3D3NB5qPkMCI9Ky4F"/>
+<div class="absolute top-3 left-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded-md text-primary font-label-md text-label-md font-bold">
+              Japon
+            </div>
+<div class="absolute top-3 right-3 bg-secondary text-on-secondary px-3 py-1 rounded-full font-price-tag text-price-tag font-bold shadow-sm">
+              2,90 €
+            </div>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1 gap-space-sm">
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm text-primary">Mochi Artisanal (Azuki ou Sésame)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Enveloppe moelleuse de riz gluant pilé, cœur onctueux au choix : haricot rouge Azuki mijoté ou sésame noir torréfié.
+              </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs border-t border-outline-variant/30">
+<span class="font-label-md text-label-md text-secondary">100% végétal</span>
+<button class="font-label-md text-label-md text-primary hover:text-primary-container font-semibold flex items-center gap-1">
+                Ajouter au plateau <span class="material-symbols-outlined text-sm">east</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Pastry 5 -->
+<div class="flex flex-col overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all group">
+<div class="h-44 w-full overflow-hidden relative">
+<img alt="Part de pâtisserie maison servie avec une boisson" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Golden Portuguese Pastel de Nata custard tart with caramelized blistering spots, flaky crisp puff pastry, lightly dusted with aromatic cinnamon powder." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqKHCG0TSwfcqgzsjySYTsUzJnz_BM-Y5gpRB9tiOEzTWG3-5dVPNeJo4GH8_tPpHQUWQLTiCQvvVVyc94ti7X1FO1Tw7ISIvXKcD-VJg1-M4BDuPW8huWGpM6qAf_MCtOYowdPmeREHy5SfxSc7J3cZJ_as3nudgmXsBdiAk3f1x9QHz4QTQTQvVUFIvKimyaVHjU1QgOq1pqlYPlph1ChsB0LPvwjreYqbyKr5Wf"/>
+<div class="absolute top-3 left-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded-md text-primary font-label-md text-label-md font-bold">
+              Portugal
+            </div>
+<div class="absolute top-3 right-3 bg-secondary text-on-secondary px-3 py-1 rounded-full font-price-tag text-price-tag font-bold shadow-sm">
+              2,40 €
+            </div>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1 gap-space-sm">
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm text-primary">Pastel de Nata Tiède &amp; Cannelle</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Pâte feuilletée croustillante dorée au four à haute température, crème aux œufs fondante vanillée et nuage de cannelle.
+              </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs border-t border-outline-variant/30">
+<span class="font-label-md text-label-md text-secondary">Sorti du four</span>
+<button class="font-label-md text-label-md text-primary hover:text-primary-container font-semibold flex items-center gap-1">
+                Ajouter au plateau <span class="material-symbols-outlined text-sm">east</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Pastry 6 -->
+<div class="flex flex-col overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all group">
+<div class="h-44 w-full overflow-hidden relative">
+<img alt="Boisson chaude et pâtisserie présentées sur une table" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Slice of warm caramelized French Tarte Tatin with deeply amber slow-cooked apples, glistening caramel sauce and crème fraîche quenelle beside it." src="https://lh3.googleusercontent.com/aida-public/AB6AXuByuOClwmeOTBSiWNSDqRNv_KDzbp5IE43uvK80PmAXPP4qUS74foVij71DF61A5Gsvdhwmcgd3fTOP_86tan35VpGPxoGuBoj2nuyYAIwHqPKbrLVd1I0gkY_JWIl8WpP5HDLLz958UAjYYVEPtl8mRqG3W8_WqmZ1QDsyt0yrBOXoEgqpH0aI_OPKSDFHZv2GSiwWeepX0Up2MIUM8hHISIdp1VlXxyoQeEtrkPe9"/>
+<div class="absolute top-3 left-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded-md text-primary font-label-md text-label-md font-bold">
+              France
+            </div>
+<div class="absolute top-3 right-3 bg-secondary text-on-secondary px-3 py-1 rounded-full font-price-tag text-price-tag font-bold shadow-sm">
+              3,90 €
+            </div>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1 gap-space-sm">
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm text-primary">Tarte Tatin Tiède au Beurre Salé</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Pommes reinettes caramélisées fondantes pendant 3 heures, pâte sablée croustillante et coulis de caramel au sel de Guérande.
+              </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs border-t border-outline-variant/30">
+<span class="font-label-md text-label-md text-secondary">Classique adoré</span>
+<button class="font-label-md text-label-md text-primary hover:text-primary-container font-semibold flex items-center gap-1">
+                Ajouter au plateau <span class="material-symbols-outlined text-sm">east</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Pastry 7: Cookies -->
+<div class="flex flex-col overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all group"><div class="h-44 w-full overflow-hidden relative"><img alt="Cookies artisanaux aux pépites de chocolat et aux noix" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBb8bx2MNXYxysrCrmRRepO6duCA9Ib09mCZjkz9O4es7DJU0ewFPERhA4pN3AhP4-Z7uwFp7U73XJbHbuJv3YRaWQU4vlx6dVwR6bvTRUtd8gpRk64OwjpAFZaGCyhYf7z38F3INJuBVGGrz8bQLDLDSYiyzyvsTT9vxJvmqp_eiLcJR3KWk4mlQQJP08It5hKIfEO6Xtbfq30ncrFQV_HHRmsYgfydsvtSfhswQFw"/><div class="absolute top-3 left-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded-md text-primary font-label-md text-label-md font-bold">Maison / Fusion</div><div class="absolute top-3 right-3 bg-secondary text-on-secondary px-3 py-1 rounded-full font-price-tag text-price-tag font-bold shadow-sm">2,60 €</div></div><div class="p-space-md flex flex-col justify-between flex-1 gap-space-sm"><div class="flex flex-col gap-1"><h3 class="font-headline-sm text-headline-sm text-primary">Cookies Artisanaux Moelleux</h3><p class="font-body-sm text-body-sm text-on-surface-variant">Pépites chocolat noir &amp; éclats de noix de pécan caramélisées, sortis du four.</p></div><div class="flex items-center justify-between pt-space-xs border-t border-outline-variant/30"><span class="font-label-md text-label-md text-secondary">Sortis du four</span><button class="font-label-md text-label-md text-primary hover:text-primary-container font-semibold flex items-center gap-1">Ajouter au plateau <span class="material-symbols-outlined text-sm">east</span></button></div></div></div></div>
+</div>
+</section>
+<!-- Section 5: Formules Goûter & Pauses Gourmandes -->
+<section class="w-full py-space-xl bg-surface" id="formules">
+<div class="w-full max-w-[1240px] mx-auto px-margin md:px-margin-md lg:px-margin-lg">
+<!-- Callout Header -->
+<div class="text-center max-w-2xl mx-auto flex flex-col items-center gap-space-xs pb-space-lg"><span class="px-space-md py-1 bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md rounded-full font-semibold">
+          Formules Gourmandes de 5,00 € à 9,00 €
+        </span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Les Formules Goûter des Cousines</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Parce que la gourmandise et la chaleur d'un salon doivent être accessibles à tous les cœurs, découvrez nos formules complètes préparées avec amour.
+        </p></div>
+<!-- 4 Formula Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter items-stretch">
+<!-- Formule 1: Petit Matin -->
+<div class="flex flex-col justify-between p-space-lg rounded-2xl bg-surface-container shadow-sm">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-baseline justify-between">
+<h3 class="font-headline-sm text-headline-sm text-primary">Formule Petit Matin</h3>
+<div class="flex items-baseline gap-1">
+<span class="font-display text-headline-lg text-primary">5,00</span>
+<span class="font-headline-sm text-headline-sm text-primary">€</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Idéale pour commencer la journée doucement avec les premiers rayons de lumière et un journal.
+            </p>
+<ul class="flex flex-col gap-space-sm pt-space-xs font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-title-md">check_circle</span>
+<span class=""><strong>1 Café torréfié</strong> ou Thé d'éveil</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-title-md">check_circle</span>
+<span class=""><strong>1 Douceur matinale</strong> (Pastel ou Scone)</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-title-md">check_circle</span>
+<span class="">Valable jusqu’à 13h00</span>
+</li>
+</ul>
+</div>
+<div class="pt-space-md">
+<button class="w-full py-space-sm rounded-lg bg-surface-container-high text-primary font-label-md text-label-md hover:bg-surface-variant transition-all">
+              Choisir Petit Matin (5,00 €)
+            </button>
+</div>
+</div>
+<!-- Formule 2: Enfants & P'tits Bouts -->
+<div class="flex flex-col justify-between p-space-lg rounded-2xl bg-surface-container shadow-sm">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-baseline justify-between">
+<h3 class="font-headline-sm text-headline-sm text-primary">Formule Enfants</h3>
+<div class="flex items-baseline gap-1">
+<span class="font-display text-headline-lg text-primary">5,50</span>
+<span class="font-headline-sm text-headline-sm text-primary">€</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Un goûter festif pour les petits gourmands à la sortie de l'école ou le week-end avec accès jeux.
+            </p>
+<ul class="flex flex-col gap-space-sm pt-space-xs font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-title-md">check_circle</span>
+<span class=""><strong>Boisson douce</strong> (Choco onctueux, Bissap doux ou Lait miel)</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-title-md">check_circle</span>
+<span class=""><strong>Cookie artisanal</strong> tout choco ou pécan caramel</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-title-md">check_circle</span>
+<span class="">Coin jeux en bois &amp; coloriage offert</span>
+</li>
+</ul>
+</div>
+<div class="pt-space-md">
+<button class="w-full py-space-sm rounded-lg bg-surface-container-high text-primary font-label-md text-label-md hover:bg-surface-variant transition-all">
+              Choisir Formule Enfants (5,50 €)
+            </button>
+</div>
+</div>
+<!-- Formule 3: Étudiants -->
+<div class="flex flex-col justify-between p-space-lg rounded-2xl bg-surface-container shadow-sm">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-baseline justify-between">
+<h3 class="font-headline-sm text-headline-sm text-primary">Formule Étudiants</h3>
+<div class="flex items-baseline gap-1">
+<span class="font-display text-headline-lg text-primary">6,00</span>
+<span class="font-headline-sm text-headline-sm text-primary">€</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Une pause studieuse réconfortante conçue pour réviser en toute sérénité.
+            </p>
+<ul class="flex flex-col gap-space-sm pt-space-xs font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-title-md">check_circle</span>
+<span class=""><strong>Chocolat chaud aux épices</strong> ou thé/infusion au choix</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-title-md">check_circle</span>
+<span class=""><strong>Pâtisserie artisanale</strong> ou Mochi au choix</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-title-md">check_circle</span>
+<span class="">connexion internet rapide &amp; prises à table</span>
+</li>
+</ul>
+</div>
+<div class="pt-space-md">
+<button class="w-full py-space-sm rounded-lg bg-surface-container-high text-primary font-label-md text-label-md hover:bg-surface-variant transition-all">
+              Choisir Étudiants (6,00 €)
+            </button>
+</div>
+</div>
+<!-- Formule 4: Découverte (La Préférée) -->
+<div class="relative flex flex-col justify-between p-space-lg rounded-2xl bg-surface-container-low shadow-lg ring-2 ring-primary/20 transform md:-translate-y-2">
+<div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-primary text-on-primary font-label-md text-label-md uppercase px-space-md py-1 rounded-full shadow-sm tracking-wider font-bold">
+            La Préférée
+          </div>
+<div class="flex flex-col gap-space-md pt-2">
+<div class="flex items-baseline justify-between">
+<h3 class="font-headline-sm text-headline-sm text-primary">Formule Découverte</h3>
+<div class="flex items-baseline gap-1">
+<span class="font-display text-headline-lg text-primary">9,00</span>
+<span class="font-headline-sm text-headline-sm text-primary">€</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              L'accord parfait pour voyager : votre grand thé favori associé à une pâtisserie artisanale d'une autre contrée.
+            </p>
+<ul class="flex flex-col gap-space-sm pt-space-xs font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-title-md">check_circle</span>
+<span class=""><strong>1 Thé du Monde</strong> en théière individuelle</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-title-md">check_circle</span>
+<span class=""><strong>1 Pâtisserie artisanale</strong> au choix</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-title-md">check_circle</span>
+<span class="">Sucre candi &amp; fleur d’oranger offerts</span>
+</li>
+</ul>
+</div>
+<div class="pt-space-md">
+<button class="w-full py-space-sm rounded-lg bg-primary-container text-on-primary font-label-md text-label-md shadow-sm hover:bg-primary transition-all">
+              Commander cette Formule (9,00 €)
+            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 6: Notre Concept & L'Esprit des Cousines -->
+<section class="w-full py-space-xl bg-surface-container-low overflow-hidden" id="histoire">
+<div class="w-full max-w-[1240px] mx-auto px-margin md:px-margin-md lg:px-margin-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-center">
+<!-- Story Visual Duo -->
+<div class="lg:col-span-6 relative">
+<div class="relative w-full rounded-2xl overflow-hidden shadow-lg h-[420px]">
+<img alt="Les quatre cousines réunies autour d’une table dans un salon de thé" class="w-full h-full object-cover" data-alt="Warm welcoming atmosphere of family tea salon with diverse cousins laughing together, serving steaming cups of spiced tea and plates of fresh pastries, vintage warm lighting, intimate community gathering." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCh8BmLm_cv1zdBviL5RuqgJcim0cbwtJKaUdMyNkuhaiYWask1Fo0XMPRGNNc4V6kjKuIXwa-DRjUUaQpYwwoL2dNhW63zW2SnJidVIOI0WaY0-TTw1fhxSkibSfdVYv3LfBbEvmwiXDRFFtHRfexr56EkO7lEmfqIvb71JH_3kxIPOqzQn48bYlAVmUsMvXAORn-o9rsM2CxnUeHlF159lxBUCI9yOs5N_up7-jzX"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 text-on-primary flex flex-col">
+<span class="font-headline-sm text-headline-sm">« Une table où nul n'est étranger »</span>
+<span class="font-body-sm text-body-sm text-primary-fixed">Les quatre cousines — fondatrices du projet fictif</span>
+</div>
+</div>
+<!-- Decorative Floating Card -->
+<div class="absolute -bottom-6 -right-6 hidden sm:flex items-center gap-space-sm p-space-md bg-surface-container-lowest rounded-xl shadow-lg border border-secondary/15 max-w-xs">
+<span class="material-symbols-outlined text-secondary text-headline-md">favorite</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary font-bold">100% Indépendant</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Créé avec le cœur, partagé avec tous</span>
+</div>
+</div>
+</div>
+<!-- Story Content -->
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<span class="font-label-lg text-label-lg text-secondary uppercase font-semibold">Notre Histoire &amp; Vocation</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Né d’un rêve d'enfance et de carnets de voyages</h2>
+<div class="flex flex-col gap-space-sm font-body-lg text-body-lg text-on-surface-variant"><p class="">Nous sommes 5 jeunes femmes d'origines différentes réunies par une même passion : ouvrir une boutique chaleureuse et bienveillante mettant à l'honneur différents types de thés d'exception et de pâtisseries gourmandes du monde entier.</p><p class="">Au fil de nos créations, nous allions précieusement nos traditions familiales transmises avec amour et les recettes inspirées de nos carnets de voyages. En ouvrant <strong>La Tasse des Cousines</strong>, nous créons un refuge solidaire et métissé où chacun est le bienvenu autour d'une tasse parfumée et d'un délice fait-maison.</p></div>
+<div class="grid grid-cols-2 gap-space-md pt-space-xs">
+<div class="p-space-md rounded-lg bg-surface-container flex flex-col">
+<span class="material-symbols-outlined text-secondary text-title-lg mb-1">spa</span>
+<span class="font-title-md text-title-md text-primary">Infusions Pures</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sans arômes chimiques ni conservateurs</span>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container flex flex-col">
+<span class="material-symbols-outlined text-secondary text-title-lg mb-1">handshake</span>
+<span class="font-title-md text-title-md text-primary">Chaleur Humaine</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Un sourire offert avec chaque service</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 7: Témoignages Chaleureux & Infos Pratiques -->
+<section class="w-full py-space-xl bg-surface" id="reservation">
+<div class="w-full max-w-[1240px] mx-auto px-margin md:px-margin-md lg:px-margin-lg flex flex-col gap-space-xl">
+<!-- Customer Reviews -->
+<div class="flex flex-col gap-space-lg">
+<div class="flex flex-col text-center max-w-xl mx-auto gap-space-xs">
+<span class="font-label-lg text-label-lg text-secondary uppercase font-semibold">Paroles de nos habitués</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Les mots doux de nos visiteurs</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col justify-between gap-space-md shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<div class="flex text-secondary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">
+                « Un lieu magique ! Le Chaï Masala m'a rappelé les rues de Bombay, et le fait d’avoir un thé délicieux et un gâteau pour moins de 5€ dans notre salon est un vrai plaisir. »
+              </p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs border-t border-outline-variant/30">
+<div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold">
+                S
+              </div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-semibold text-primary">Visiteuse fictive</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Habituée du samedi</span>
+</div>
+</div>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col justify-between gap-space-md shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<div class="flex text-secondary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">
+                « Les cornes de gazelle sont d'une finesse incomparable, fondantes et subtilement parfumées. L'espace pour les petits avec tapis et livres est tellement pensé ! »
+              </p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs border-t border-outline-variant/30">
+<div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold">
+                K
+              </div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-semibold text-primary">Deux visiteurs fictifs</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Voisins du quartier</span>
+</div>
+</div>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col justify-between gap-space-md shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<div class="flex text-secondary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">
+                « Je viens y étudier tous les mardis après-midi. Ambiance feutrée, musique douce du monde entier et une théière de Rooibos parfumée sans cesse renouvelée. »
+              </p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs border-t border-outline-variant/30">
+<div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold">
+                A
+              </div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-semibold text-primary">Visiteuse fictive</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Étudiante en lettres</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Practical Info & Quick Reservation Block -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg bg-surface-container-high rounded-2xl p-space-lg lg:p-space-xl items-center" id="nous-trouver">
+<!-- Left: Details & Map Link -->
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-lg text-label-lg text-secondary uppercase font-semibold">Venez nous voir</span>
+<h3 class="font-headline-lg text-headline-lg text-primary">Un espace chaleureux vous attend</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Nous sommes ouverts selon les horaires fictifs du projet avec service continu. Que ce soit sur place, à emporter ou en Commande à emporter pour vos pauses gourmandes au bureau.
+            </p>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-headline-sm mt-0.5">location_on</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Adresse fictive — Ville-exemple</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tramway Ligne 1 (Arrêt Bouffay ou Duchesse Anne) • Quartier Bouffay</span>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-headline-sm mt-0.5">access_time</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Ouvert selon les horaires fictifs du projet sans interruption</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Du Lundi au Dimanche : 10h00 à 19h30</span>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-headline-sm mt-0.5">shopping_bag</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Commande à emporter &amp; Boîtes de Pâtisseries</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Prêt en 15 minutes pour emporter vos douceurs à la maison</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Fast Booking Form Card -->
+<div class="lg:col-span-6 bg-surface-container-lowest rounded-xl p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-primary">Réserver un moment doux</h3>
+<span class="px-2.5 py-1 bg-surface-container text-secondary text-label-md font-semibold rounded-md">Sans frais</span>
+</div>
+<form class="flex flex-col gap-space-sm" onsubmit="event.preventDefault(); alert('Merci pour votre confiance ! Votre table ou commande est pré-enregistrée chez les cousines.');">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant">Nom complet</label>
+<input class="px-space-sm py-2 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary/40" placeholder="Nour Benali" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant">Téléphone</label>
+<input class="px-space-sm py-2 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary/40" placeholder="06 12 34 56 78" required="" type="tel"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant">Date &amp; Heure</label>
+<input class="px-space-sm py-2 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary/40" type="datetime-local"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant">Nombre de convives</label>
+<select class="px-space-sm py-2 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary/40">
+<option>1 personne (Pause solo &amp; lecture)</option>
+<option selected="">2 personnes (En tête-à-tête)</option>
+<option>3 - 4 personnes (Goûter entre amis)</option>
+<option>5 personnes et plus (Grande tablée / Famille)</option>
+</select>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant">Envie particulière ou allergie (optionnel)</label>
+<input class="px-space-sm py-2 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary/40" placeholder="Ex: Sans gluten, chaise bébé, table coin enfants..." type="text"/>
+</div>
+<button class="w-full mt-space-xs py-space-sm bg-primary-container text-on-primary font-label-lg text-label-lg rounded-lg shadow-md hover:bg-primary transition-all flex items-center justify-center gap-space-xs" type="submit">
+<span class="material-symbols-outlined text-title-lg">favorite</span>
+<span class="">Confirmer ma venue au salon</span>
+</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface pt-space-xl pb-space-xl"><div class="w-full max-w-[1240px] mx-auto px-margin md:px-margin-md lg:px-margin-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-lg pb-space-xl"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-xs"><div class="w-8 h-8 rounded-full overflow-hidden shrink-0"><img alt="Logo de La Tasse des Cousines en pied de page" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqcvcPwzXs44YjODlQnC_31TgWZE0RQN7uJnQcVsVv2t1HWX71V7iyUsSa6Yig5wa7g2thHdrwn4qPzFFVn5amdNPQ4Fi1MdeRvj6nGv8AUfKNaE1xkIWr3mJrLWkMMt_OKnFq4A8STaTfieDFM4voVOEHdzjj9oZtcxMZ1bC_-BRlqk_-0WAhCBxUgyVLce3BGw6N65gkzYOwrHlmUUb-o0m6Dm0MfGF25KUyfRXlwpakvutimFu9"/></div><span class="font-headline-sm text-headline-sm text-primary">La Tasse des Cousines</span></div><p class="font-body-md text-body-md text-on-surface-variant">« Un thé, mille cultures, une seule famille. » Un carrefour d'échanges, d'infusions d'antan et de douceurs artisanales du monde entier, partagées avec tendresse et générosité.</p><div class="flex items-center gap-space-xs text-secondary"><span class="material-symbols-outlined text-title-md">favorite</span><span class="font-label-md text-label-md text-secondary">Salon solidaire, artisanal &amp; multiculturel</span></div></div><div class="flex flex-col gap-space-sm"><span class="font-title-md text-title-md text-primary">Horaires du Salon</span><ul class="flex flex-col gap-space-xs font-body-md text-body-md text-on-surface-variant"><li class=""><strong class="text-on-surface">Lundi au Vendredi (dont Mercredi) :</strong> 10h00 – 19h30</li><li class=""><strong class="text-on-surface">Samedi &amp; Dimanche :</strong> 10h00 – 19h30</li><li class=""><strong class="text-on-surface">Accueil selon les horaires fictifs du projet :</strong> Service continu sans interruption</li></ul><span class="font-label-md text-label-md text-secondary mt-space-xs">Service continu pour les thés et le goûter</span></div><div class="flex flex-col gap-space-sm"><span class="font-title-md text-title-md text-primary">Notre Engagement Doux</span><div class="p-space-md bg-surface-container rounded-lg flex flex-col gap-space-xs"><span class="font-title-md text-title-md text-secondary">Prix toujours accessibles</span><p class="font-body-sm text-body-sm text-on-surface-variant">Toutes nos pâtisseries et thés restent à prix très doux dès 2,20 €, et nos formules complètes dès 5,00 €, pour que la convivialité demeure un droit et non un privilège.</p></div></div><div class="flex flex-col gap-space-sm"><span class="font-title-md text-title-md text-primary">Nous Joindre &amp; Suivre</span><p class="font-body-md text-body-md text-on-surface-variant">Adresse fictive — Ville-exemple<br/>Tél : Coordonnées fictives — à compléter</p><div class="flex items-center gap-space-sm pt-space-xs"><a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-primary hover:bg-primary-container transition-all" href="#"><span class="material-symbols-outlined text-title-lg">share</span></a><a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-primary hover:bg-primary-container transition-all" href="#"><span class="material-symbols-outlined text-title-lg">photo_camera</span></a><a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-primary hover:bg-primary-container transition-all" href="#"><span class="material-symbols-outlined text-title-lg">mail</span></a></div></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-sm text-on-surface-variant font-body-sm text-body-sm"><span class="">© 2024 La Tasse des Cousines — Tous droits réservés.</span><div class="flex items-center gap-space-md flex-wrap"><a class="hover:text-primary transition-colors" href="recette.html">Nos recettes</a><a class="hover:text-primary transition-colors" href="mentions-legales.html">Mentions légales</a><a class="hover:text-primary transition-colors" href="politique-confidentialite.html">Politique de confidentialité</a><a class="hover:text-primary transition-colors" href="contact.html">Contact</a></div></div></div></footer></body></html>
